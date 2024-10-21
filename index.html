@@ -4,46 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khanh Ha</title>
+    <meta name="description" content="Khanh Ha's Portfolio - Biotechnology and Medical Data Science">
+    <title>Khanh Ha | Data Scientist in Biotechnology</title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
-        <div class="nav_bar">
-        <ul class="nav_bar_list">
-            <li><a id ="nav" href="index.html">About me</a></li>
-            <li><a id ="nav" href="books.html">Books</a></li>
-            <li><a id ="nav" href="blog.html">Quotes</a></li>
-        </ul>
-    </div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <header>
+        <h1>Khanh Ha</h1>
+        <p>Master's Student in Chemical Engineering with Data Science | Seeking Opportunities in Biotechnology and AI</p>
+    </header>
 
-    <div class="body">
-        <div class="whoami" id="paragraph">
-            <h1 id="title">Who am I?</h1>
-            <p>Hi, my name is Ha Tuan, I come from Ho Chi Minh city, Viet Nam. I am currently a freshman at Vietnamese-German University, majoring in Computer Science & Engineering (CSE). Right now, my main focus is web development, I am trying to work on as many web projects as I can.</p>
+
+    <section class="hero">
+        <div>
+            <h1>Driving Innovation in Biotechnology with Data Science</h1>
+            <a href="#projects" style="color:white; font-size: 1.5rem;">View My Work</a>
         </div>
-       
-        <div class="why" id="paragraph">
-            <h1 id="title">Why do I have a personal website?</h1>
-            <p> Many many reasons. One of which is that my professor has one, and I find it pretty cool. Another reason is because I read a book called "Show Your Work!" by Austin Kleon. Besides, it's really nice to have something of your own out in the internet.</p>
-        </div>
+    </section>
 
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I am a graduate student at the University of Washington, pursuing a Master's in Chemical Engineering with a focus on Data Science. My research and projects focus on leveraging machine learning to solve complex problems in biotechnology, healthcare, and diagnostics.
+        </p>
+        <a href="resume.pdf" style="text-decoration: none; background-color: #4CAF50; color: white; padding: 10px 20px;">Download Resume</a>
+    </section>
 
-
-
-        <div class="contact" id="paragraph">
-            <h1>Contact</h1>
-            <div class="contact_logo">
-                <a href="https://www.facebook.com/tuan10ha"><img src="/assets/avatar.png"></a>
-                <a href="https://github.com/haanhtuandev"><img id="github" src="/assets/github-logo.png"></a>
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <p>Explore my research projects, ranging from breast cancer imaging segmentation to EEG analysis for TBI patients.</p>
+        <div>
+            <!-- Placeholder for project cards -->
+            <div>
+                <h3>Breast Cancer Imaging Segmentation Using AI</h3>
+                <p>Developed a deep learning model to accurately segment breast cancer tissue images, aiding in diagnosis and treatment planning.</p>
+                <a href="#">Read More</a>
             </div>
-           
+            <div>
+                <h3>EEG Data Analysis for TBI Patients</h3>
+                <p>Applied machine learning algorithms to analyze EEG data from patients with traumatic brain injuries, aiming to assist in diagnosis.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div>
+                <h3>Protein Engineering for Therapeutics</h3>
+                <p>Utilized computational tools to model and engineer therapeutic proteins for medical applications.</p>
+                <a href="#">Read More</a>
+            </div>
         </div>
+    </section>
 
-        <p id="darkmode">----->dark<-----</p>
+    <section id="research" class="section">
+        <h2>Research</h2>
+        <p>Discover my academic research contributions, including publications and collaborations in medical data science and biotechnology.</p>
+        <!-- Add links to research papers or collaborations here -->
+    </section>
 
-    </div>
+    <section id="resume" class="section">
+        <h2>Resume</h2>
+        <p>Download my resume to learn more about my academic background, work experience, and skillset.</p>
+        <a href="assets/BKH-Resume.pdf" style="text-decoration: none; background-color: #a54caf; color: white; padding: 10px 20px;">Download Resume</a>
+    </section>
 
-    <script src="script.js"></script>
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Interested in collaborating or offering a job opportunity? Get in touch through the form below or email me directly at <a href="bkha@uw.edu">bkha@uw.edu</a>.</p>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required><br><br>
+            <input type="email" name="email" placeholder="Your Email" required><br><br>
+            <textarea name="message" placeholder="Your Message" required></textarea><br><br>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Khanh Ha. All rights reserved. | <a href="https://linkedin.com/in/khanhha456">LinkedIn</a> | <a href="https://github.com/khanhha456">GitHub</a></p>
+    </footer>
+
 </body>
 </html>
