@@ -2,91 +2,134 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Khanh Ha's Portfolio - Biotechnology and Medical Data Science">
-    <title>Khanh Ha | Data Scientist in Biotechnology</title>
+    <title>Khanh Ha</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#research">Research</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    
     <header>
-        <h1>Khanh Ha</h1>
-        <p>Master's Student in Chemical Engineering with Data Science | Seeking Opportunities in Biotechnology and AI</p>
+        <div class="header-content">
+            <div class="header-logo">
+                <p>KhanhHa</p>
+            </div>
+
+            <div class="header-nav">
+
+                <ul class="nav">
+                    <a class="action" href="#about">About</a>
+                    <a class="action" href="#projects">Projects</a>
+                    <a class="action" href="#contact">Contact</a>
+                </ul>
+
+                
+
+            </div>
+
+            <label  class="switch">
+                <input id="dark-mode-toggle" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+
+            
+            
+            </div>
+            
+        </div>
+       
     </header>
 
+    <div class="section-container">
+        <section id="about" class="section">
 
-    <section class="hero">
-        <div>
-            <h1>Driving Innovation in Biotechnology with Data Science</h1>
-            <a href="#projects" style="color:white; font-size: 1.5rem;">View My Work</a>
-        </div>
-    </section>
-
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>
-            I am a graduate student at the University of Washington, pursuing a Master's in Chemical Engineering with a focus on Data Science. My research and projects focus on leveraging machine learning to solve complex problems in biotechnology, healthcare, and diagnostics.
-        </p>
-        <a href="resume.pdf" style="text-decoration: none; background-color: #4CAF50; color: white; padding: 10px 20px;">Download Resume</a>
-    </section>
-
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <p>Explore my research projects, ranging from breast cancer imaging segmentation to EEG analysis for TBI patients.</p>
-        <div>
-            <!-- Placeholder for project cards -->
-            <div>
-                <h3>Breast Cancer Imaging Segmentation Using AI</h3>
-                <p>Developed a deep learning model to accurately segment breast cancer tissue images, aiding in diagnosis and treatment planning.</p>
-                <a href="#">Read More</a>
+            <div class="about-text">
+                <h2>About me</h2>
+            <p>
+                I am a graduate student at the University of Washington, pursuing a Master's in Chemical Engineering with a focus on Data Science. My research and projects focus on leveraging machine learning to solve complex problems in biotechnology, healthcare, and diagnostics.
+            </p>
+            <a href="assets/BKH-Resume.pdf" download="assets/BKH-Resume.pdf">Get my resume</a>
             </div>
+            
+            <img id="profile-picture" src="assets/profilepic-light.jpg">
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <p>Explore my research projects, ranging from breast cancer imaging segmentation to EEG analysis for TBI patients.</p>
             <div>
-                <h3>EEG Data Analysis for TBI Patients</h3>
-                <p>Applied machine learning algorithms to analyze EEG data from patients with traumatic brain injuries, aiming to assist in diagnosis.</p>
-                <a href="#">Read More</a>
+                <!-- Placeholder for project cards -->
+                <div>
+                    <h3>Breast Cancer Imaging Segmentation Using AI</h3>
+                    <p>Developed a deep learning model to accurately segment breast cancer tissue images, aiding in diagnosis and treatment planning.</p>
+                    <!-- <a href="#">Read More</a> -->
+                </div>
+                <div>
+                    <h3>EEG Data Analysis for TBI Patients</h3>
+                    <p>Applied machine learning algorithms to analyze EEG data from patients with traumatic brain injuries, aiming to assist in diagnosis.</p>
+                    <a href="https://github.com/EEG-project-capstone/">Read More</a>
+                </div>
+                <!-- <div>
+                    <h3>Protein Engineering for Therapeutics</h3>
+                    <p>Utilized computational tools to model and engineer therapeutic proteins for medical applications.</p>
+                    <a href="#">Read More</a> -->
+                <!-- </div> -->
             </div>
-            <div>
-                <h3>Protein Engineering for Therapeutics</h3>
-                <p>Utilized computational tools to model and engineer therapeutic proteins for medical applications.</p>
-                <a href="#">Read More</a>
-            </div>
-        </div>
-    </section>
+        </section>
+        
 
-    <section id="research" class="section">
-        <h2>Research</h2>
-        <p>Discover my academic research contributions, including publications and collaborations in medical data science and biotechnology.</p>
-        <!-- Add links to research papers or collaborations here -->
-    </section>
+        <section id="contact" class="section">
+            <h2>Contact!</h2>
+            <p>Interested in collaborating or offering a job opportunity? Get in touch with me at <a href="bkha@uw.edu">bkha@uw.edu</a>.</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#00000" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#00000" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/></svg>
 
-    <section id="resume" class="section">
-        <h2>Resume</h2>
-        <p>Download my resume to learn more about my academic background, work experience, and skillset.</p>
-        <a href="assets/BKH-Resume.pdf" style="text-decoration: none; background-color: #a54caf; color: white; padding: 10px 20px;">Download Resume</a>
-    </section>
+        </section>
 
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-        <p>Interested in collaborating or offering a job opportunity? Get in touch through the form below or email me directly at <a href="bkha@uw.edu">bkha@uw.edu</a>.</p>
-        <form>
-            <input type="text" name="name" placeholder="Your Name" required><br><br>
-            <input type="email" name="email" placeholder="Your Email" required><br><br>
-            <textarea name="message" placeholder="Your Message" required></textarea><br><br>
-            <input type="submit" value="Send Message">
-        </form>
-    </section>
 
-    <footer>
-        <p>© 2024 Khanh Ha. All rights reserved. | <a href="https://linkedin.com/in/khanhha456">LinkedIn</a> | <a href="https://github.com/khanhha456">GitHub</a></p>
-    </footer>
+        <footer>
+            <p>© 2024 Khanh Ha. All rights reserved. | <a href="https://linkedin.com/in/khanhha456">LinkedIn</a> | <a href="https://github.com/khanh-198">GitHub</a></p>
+        </footer>
+
+
+
+
+    </div>
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+
+        <script src="script.js"></script>
 
 </body>
 </html>
