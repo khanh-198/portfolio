@@ -1,48 +1,61 @@
-let navbar_element = document.querySelectorAll('a');
-let dark_switch = document.getElementById('darkmode');
-let is_dark = 0;
+const navLinks = document.querySelectorAll('.nav a');
 
+    navLinks.forEach(link => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
 
-navbar_element.forEach(nav => {
-    nav.addEventListener('mouseover', function(){
-        nav.style.textDecoration = 'underline';
+        const targetSection = document.getElementById(link.getAttribute('href').substring(1));   
+
+        scrollToSection(targetSection);
+
+        console.log('clicked');
+      });
     });
-    nav.addEventListener('mouseout', function(){
-        nav.style.textDecoration = '';
-    });
 
-});
-
-
-
-function darkmode(){
-    if (is_dark % 2 == 0){
-        document.body.style.backgroundColor = 'black';
-        document.body.style.color = 'white';
-        document.getElementById('github').src = 'assets/github-mark-white.png';
-        document.getElementById('linkedin').src = 'assets/In-White-128@2x.png';
-        navbar_element.forEach(nav => {
-            nav.style.color = 'white';
+    function scrollToSection(targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      
+        // Add the "active" class to the current link
+        const navLinks = document.querySelectorAll('.nav a');
+        navLinks.forEach(link => {
+          link.classList.remove('action');
+          if (link.getAttribute('href').substring(1)=== targetSection.id) {
+            link.classList.add('action');
+            console.log('test');
+          }
         });
-        dark_switch.innerHTML = 'Light';
-    }
-    else {
-        document.body.style.backgroundColor = 'white';
-        document.body.style.color = 'black';
-        document.getElementById('github').src = 'assets/github-mark.png';
-        document.getElementById('linkedin').src = 'assets/In-Blue-128.png';
-        navbar_element.forEach(nav => {
-            nav.style.color = 'black';
+      }
+
+      const darkModeToggle = document.getElementById('dark-mode-toggle');
+      const everyLinks = document.querySelectorAll('a');
+      const otherLinks = document.querySelectorAll(".section a");
+      const profilepic = document.getElementById('profile-picture');
+      darkModeToggle.addEventListener('click', () => {
+        const body = document.body;
+        body.classList.toggle('dark-mode');
+        
+        if (body.classList.contains('dark-mode')){
+          profilepic.src = '/assets/profilepic-dark.webp';
+        }
+        else {
+          profilepic.src = 'assets/profilepic-light.jpg';
+        }
+        everyLinks.forEach(link => {
+          if (body.classList.contains('dark-mode')) {
+            link.classList.add('link-dark-mode');
+
+          } else {
+            link.classList.remove('link-dark-mode');
+          }
         });
-        dark_switch.innerHTML = 'Dark';
+      });
+      otherLinks.forEach(link => {
+        if (body.classList.contains('dark-mode')) {
+          link.classList.add('link-dark-mode');
 
 
-    }
-}
-dark_switch.addEventListener('click', () => {
-    darkmode();
-    is_dark = is_dark + 1;
-});
-
-
+        } else {
+          link.classList.remove('link-dark-mode');
+        }
+      });
 
